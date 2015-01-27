@@ -1,6 +1,6 @@
 var $ = require('jQuery');
 
-require('../styles/index.css');
+require('../styles/index.less');
 
 $('body').append('<h1>Hey There</h1>');
 

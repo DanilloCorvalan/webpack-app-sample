@@ -10,6 +10,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: "style!css" },
+      { test: /\.less$/, loader: "style!css!less" },
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=19000' }
     ]
   }
