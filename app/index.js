@@ -20,3 +20,22 @@ document.body.appendChild(img2);
 //requiring entry points
 var page1 = require('./page1.js');
 document.body.appendChild(page1.render());
+
+
+var Modernizr = require('../bower_components/modernizr/modernizr.js');
+
+//from: http://cuttleblog.tumblr.com/post/63669845272/webpack
+if (Modernizr.touch) {
+  console.log("Loading touch libraries");
+
+  require.ensure([/* AMD-style dependencies */], function(require){
+    // require.ensure creates a bundle split-point
+    var Hammer = require('hammerjs');
+
+    // Hammer loaded via XHR - ready to initialize
+    // Hammer(/* ... */);
+  });
+
+} else {
+    console.log("No touch features detected - skipping unneeded libraries");
+}

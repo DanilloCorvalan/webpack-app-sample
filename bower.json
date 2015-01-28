@@ -1,0 +1,20 @@
+{
+  "name": "webpack-talk-app-sample",
+  "version": "0.0.0",
+  "homepage": "https://github.com/DanilloCorvalan/webpack-app-sample",
+  "authors": [
+    "Danillo Corvalan <danillo.corvalan@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3"
+  }
+}
