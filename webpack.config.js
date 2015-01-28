@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   entry : {
     index : './app/index.js',
@@ -18,5 +20,9 @@ module.exports = {
       { test: /[\\\/]bower_components[\\\/]modernizr[\\\/]modernizr\.js$/,
             loader: "imports?this=>window!exports?window.Modernizr" }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js')
+  ]
 };
