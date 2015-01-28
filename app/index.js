@@ -39,3 +39,7 @@ if (Modernizr.touch) {
 } else {
     console.log("No touch features detected - skipping unneeded libraries");
 }
+
+if (__PRODUCTION__) {
+  console.warn('Extra logging');
+}
