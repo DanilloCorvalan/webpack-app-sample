@@ -16,3 +16,7 @@ var img2 = document.createElement('img');
 img2.src = require('../images/webpack.png');
 
 document.body.appendChild(img2);
+
+//requiring entry points
+var page1 = require('./page1.js');
+document.body.appendChild(page1.render());
